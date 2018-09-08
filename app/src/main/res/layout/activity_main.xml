@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="horizontal">
+
+
+
+    <TextView
+        android:id="@+id/Last_Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/last_name"
+        />
+
+    <EditText
+        android:id="@+id/last_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Last_Name"
+        />
+
+    <TextView
+        android:id="@+id/First_Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/last_name"
+        android:text="@string/first_name"/>
+
+    <EditText
+        android:id="@+id/first_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/First_Name"
+        />
+
+    <TextView
+        android:id="@+id/middle_Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/middle_name"
+        android:layout_below="@id/first_name"/>
+
+    <EditText
+        android:id="@+id/middle_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/middle_Name"
+        />
+    <TextView
+        android:id="@+id/txt_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:layout_below="@id/middle_name"
+        />
+
+
+    <RadioGroup
+        android:id="@+id/radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_view"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:text="@string/male"
+             />
+
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/male"
+            android:text="@string/female"/>
+
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/Requires"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Requirements"
+        android:layout_below="@id/radio"
+        />
+
+    <CheckBox
+        android:id="@+id/orc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Requires"
+        android:text="Original Report Card"/>
+
+    <CheckBox
+        android:id="@+id/nso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/orc"
+        android:text="NSO Copy of Birth Certificate"/>
+
+    <CheckBox
+        android:id="@+id/cgmo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nso"
+        android:text="Certificate of Goog Moral Character"/>
+
+    <CheckBox
+        android:id="@+id/gjhsc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cgmo"
+        android:text="Certification of Junior High School Completion"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_below="@id/gjhsc"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>
